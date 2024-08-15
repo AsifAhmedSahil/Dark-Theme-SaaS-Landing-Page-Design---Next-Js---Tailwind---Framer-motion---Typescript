@@ -1,3 +1,5 @@
+import PlusIcon from "../assets/icons/plus.svg";
+
 const items = [
   {
     question: "What payment methods do you accept?",
@@ -21,6 +23,27 @@ const items = [
   },
 ];
 
+
+
 export const FAQs = () => {
-  return null;
+  return (
+    <div className="bg-black text-white bg-gradient-to-b from-[#5D2CA8] to-black p-[72px]">
+      <div className="container">
+        <h2 className="text-center text-5xl sm:text-6xl font-bold tracking-tighter">Frequently Asked Question</h2>
+        <div className="mt-12">
+          {items.map((item, index) => (
+            <div key={index} className="py-7 border-b border-white/30">
+              <div className="flex  items-center   ">
+                <span className="flex-1 text-lg font-bold">{item.question}</span>
+                <PlusIcon/>
+              </div>
+              <div className="hidden">
+                {item.answer}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
