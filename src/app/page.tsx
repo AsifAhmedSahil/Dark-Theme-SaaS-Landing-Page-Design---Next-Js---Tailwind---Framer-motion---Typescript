@@ -8,7 +8,7 @@ import { FAQs } from "@/components/FAQs";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 
-export default function Home() {
+ const Home =()=> {
   return (
     <>
     
@@ -24,3 +24,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home

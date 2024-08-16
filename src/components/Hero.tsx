@@ -1,13 +1,13 @@
+"use client";
 import Image from "next/image";
 import ArrowIcon from "../assets/icons/arrow-w.svg";
 import cursorImage from "../assets/images/cursor.png";
 import messageImage from "../assets/images/message.png";
-
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
     <div className="bg-black text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-24 relative overflow-clip ">
-
       <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-black bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[100%-120px] "></div>
 
       <div className="container relative">
@@ -27,11 +27,32 @@ export const Hero = () => {
         </div>
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
-          <h1 className="text-7xl sm:text-8xl font-bold tracking-tighter text-center mt-8 inline-flex ">
-            Streamlined Media <br /> Precision with AI
-          </h1>
-          <Image src={cursorImage} alt="" height={200} width={200} className="absolute right-[720px] top-[120px] hidden sm:inline"/>
-          <Image src={messageImage} alt="" height={200} width={200} className="absolute left-[780px] -top-[86px] hidden sm:inline"/>
+            <h1 className="text-7xl sm:text-8xl font-bold tracking-tighter text-center mt-8 inline-flex ">
+              Streamlined Media <br /> Precision with AI
+            </h1>
+            <motion.div className="absolute right-[720px] top-[120px] hidden sm:inline" drag dragSnapToOrigin>
+
+            <Image
+              src={cursorImage}
+              alt=""
+              height={200}
+              width={200}
+              className="max-w-none"
+              draggable='false'
+              />
+              </motion.div>
+
+              <motion.div className="absolute left-[780px] -top-[86px] hidden sm:inline" drag dragSnapToOrigin>
+
+            <Image
+              src={messageImage}
+              alt=""
+              height={200}
+              width={200}
+              className="max-w-none"
+              draggable='false'
+              />
+              </motion.div>
           </div>
         </div>
         <div className="flex justify-center">
