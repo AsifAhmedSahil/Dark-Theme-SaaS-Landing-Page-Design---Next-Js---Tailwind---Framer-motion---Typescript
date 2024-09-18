@@ -9,7 +9,15 @@ const Feature = ({
 }) => {
   return (
     <div className="border relative border-white/30 px-5 py-10 text-center rounded-xl">
-        <div className="absolute inset-0 border-2 border-purple-400 rounded-xl"></div>
+      <div
+        className="absolute inset-0 border-2 border-purple-400 rounded-xl"
+        style={{
+          WebkitMaskImage:
+            "radial-gradient(100px 100px at 0px 0px ,black, transparent ",
+          maskImage:
+            "radial-gradient(100px 100px at 0px 100px, black, transparent ",
+        }}
+      ></div>
       <div className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
         <EcosystemIcon />
       </div>
