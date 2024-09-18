@@ -37,7 +37,7 @@ export const Hero = () => {
               alt=""
               height={200}
               width={200}
-              className="max-w-none"
+              className="max-w-none animate-pulse"
               draggable='false'
               />
               </motion.div>
@@ -49,7 +49,7 @@ export const Hero = () => {
               alt=""
               height={200}
               width={200}
-              className="max-w-none"
+              className="max-w-none animate-pulse"
               draggable='false'
               />
               </motion.div>
