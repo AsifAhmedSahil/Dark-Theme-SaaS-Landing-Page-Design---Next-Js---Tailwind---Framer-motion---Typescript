@@ -2,12 +2,12 @@
 
 ## Welcome to the SaaS Landing Page project! This repository contains a sleek and modern landing page designed specifically for showcasing software or services. Built with cutting-edge technologies, this template emphasizes performance, style, and user experience.
 
-##Features
-Dark Theme: A modern and sleek design that appeals to users and enhances readability.
-Fast Performance: Built using Next.js, ensuring optimal loading times and SEO benefits.
-Customizable Styling: Tailwind CSS provides a utility-first approach for easy customization and responsive design.
-Smooth Animations: Framer Motion allows for engaging animations that enhance the user experience.
-Type Safety: Leveraging TypeScript for robust code and reduced runtime errors.
+## Features
+#### Dark Theme: A modern and sleek design that appeals to users and enhances readability.
+#### Fast Performance: Built using Next.js, ensuring optimal loading times and SEO benefits.
+#### Customizable Styling: Tailwind CSS provides a utility-first approach for easy customization and responsive design.
+#### Smooth Animations: Framer Motion allows for engaging animations that enhance the user experience.
+#### Type Safety: Leveraging TypeScript for robust code and reduced runtime errors.
 
 ## Getting Started
 
